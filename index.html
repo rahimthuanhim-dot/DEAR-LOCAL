@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dear Local — Guwahati & Assam Updates</title>
+<meta name="description" content="Local news and updates from Kahilipara, Guwahati, and across Assam — curated by the community.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="assets/dearlocal-logo.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/dearlocal-logo.png">
+<link rel="icon" href="assets/dearlocal-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0a0a0b',
+          panel: 'rgba(10,10,11,0.03)',
+          bone: '#faf9f6',
+          paper: '#faf9f6',
+          fade: '#6b6a64',
+          pin: '#d81b3f',
+        },
+        fontFamily: {
+          serif: ['Fraunces', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    background: #f6f4ef;
+  }
+  .clay {
+    background: #eeebe3;
+    border: none;
+    border-radius: 26px;
+    box-shadow:
+      8px 8px 18px rgba(10,10,11,0.14),
+      -8px -8px 18px rgba(255,255,255,0.85);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+  }
+  .clay-hover:hover {
+    box-shadow:
+      12px 12px 26px rgba(10,10,11,0.16),
+      -10px -10px 22px rgba(255,255,255,0.9);
+    transform: translateY(-3px);
+  }
+  .clay-inset {
+    background: #f6f4ef;
+    border-radius: 999px;
+    box-shadow:
+      inset 4px 4px 8px rgba(10,10,11,0.12),
+      inset -4px -4px 8px rgba(255,255,255,0.8);
+  }
+  .hairline { border-color: rgba(10,10,11,0.10); }
+  .pulse-dot {
+    box-shadow: 0 0 0 0 rgba(216,27,63,0.6);
+    animation: pulse 2.2s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(216,27,63,0.5); }
+    70% { box-shadow: 0 0 0 9px rgba(216,27,63,0); }
+    100% { box-shadow: 0 0 0 0 rgba(216,27,63,0); }
+  }
+  .tag {
+    letter-spacing: 0.08em;
+  }
+  ::selection { background: rgba(230,67,92,0.35); }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse-dot { animation: none; }
+    * { scroll-behavior: auto !important; }
+  }
+  :focus-visible {
+    outline: 2px solid #e6435c;
+    outline-offset: 3px;
+  }
+</style>
+</head>
+
+<body class="text-ink font-sans antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-[#f6f4ef]/90 backdrop-blur-sm border-b hairline">
+  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-4 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3 group">
+      <span class="relative flex h-9 w-9 items-center justify-center overflow-hidden clay-inset">
+        <img src="assets/dearlocal-logo.png" alt="Dear Local logo" class="h-full w-full object-cover">
+      </span>
+      <span class="font-serif text-lg tracking-tight font-semibold">Dear Local</span>
+    </a>
+    <nav class="hidden sm:flex items-center gap-8 text-sm font-medium text-fade">
+      <a href="#local" class="hover:text-ink transition-colors">Guwahati</a>
+      <a href="#assam" class="hover:text-ink transition-colors">Assam</a>
+      <a href="#submit" class="hover:text-ink transition-colors">Submit a story</a>
+    </nav>
+    <a href="#submit" class="sm:hidden text-sm font-medium text-fade hover:text-ink">Submit</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="max-w-6xl mx-auto px-6 sm:px-10 pt-16 pb-14 sm:pt-24 sm:pb-20">
+  <div class="flex items-center gap-2 text-xs tag uppercase text-fade mb-6">
+    <span class="relative flex h-2 w-2">
+      <span class="pulse-dot absolute inline-flex h-2 w-2 rounded-full bg-pin"></span>
+      <span class="relative inline-flex h-2 w-2 rounded-full bg-pin"></span>
+    </span>
+    Live from the neighborhood
+  </div>
+
+  <h1 class="font-serif font-light text-4xl sm:text-6xl leading-[1.08] max-w-3xl">
+    What's happening in
+    <span class="font-black italic">Guwahati</span> —
+    and across <span class="font-black italic">Assam</span>.
+  </h1>
+
+  <p class="mt-6 max-w-xl text-fade text-base sm:text-lg leading-relaxed">
+    Stories, notices, and updates sourced by the people who actually live here.
+  </p>
+
+  <div class="mt-6 flex items-center gap-2 text-sm text-fade">
+    <svg class="h-4 w-4 text-pin" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.273 1.765 11.842 11.842 0 00.976.544l.062.029.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" clip-rule="evenodd"/></svg>
+    Kahilipara, Guwahati · Assam, India
+  </div>
+
+<!-- LOCAL SECTION -->
+<section id="local" class="max-w-6xl mx-auto px-6 sm:px-10 py-10 sm:py-14">
+  <div class="flex items-end justify-between border-b hairline pb-5 mb-8">
+    <div>
+      <span class="text-xs tag uppercase text-pin font-semibold">Neighborhood</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-medium mt-1">Local</h2>
+    </div>
+    <span class="hidden sm:block text-sm text-fade">Updated as it happens</span>
+  </div>
+
+  <div id="local-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+</section>
+
+<!-- ASSAM SECTION -->
+<section id="assam" class="max-w-6xl mx-auto px-6 sm:px-10 py-10 sm:py-14">
+  <div class="flex items-end justify-between border-b hairline pb-5 mb-8">
+    <div>
+      <span class="text-xs tag uppercase text-pin font-semibold">Statewide</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-medium mt-1">Assam</h2>
+    </div>
+    <span class="hidden sm:block text-sm text-fade">Curated from trusted sources</span>
+  </div>
+
+  <div id="assam-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+</section>
+
+<!-- SUBMIT CTA -->
+<section id="submit" class="max-w-6xl mx-auto px-6 sm:px-10 py-14 sm:py-20">
+  <div class="clay px-8 py-12 sm:px-14 sm:py-16 text-center">
+    <h3 class="font-serif text-3xl sm:text-4xl font-medium max-w-lg mx-auto">
+      Seen something worth sharing?
+    </h3>
+    <p class="mt-4 text-fade max-w-md mx-auto leading-relaxed">
+      Submit a local update or an Assam news link with your own summary. Every submission is reviewed before it goes live.
+    </p>
+    <a href="#" id="submit-link" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-2 mt-8 bg-ink text-bone font-medium text-sm px-6 py-3 rounded-full hover:bg-ink/85 transition-colors">
+      Submit an update
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t hairline">
+  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-fade">
+    <div class="flex items-center gap-2">
+      <span class="flex h-6 w-6 items-center justify-center overflow-hidden clay-inset">
+        <img src="assets/dearlocal-logo.png" alt="Dear Local logo" class="h-full w-full object-cover">
+      </span>
+      Dear Local — Kahilipara Diaries
+    </div>
+    <div>© 2026 Dear Local. Made for the neighborhood.</div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+  const fallbackLocal = [];
+  const fallbackAssam = [];
+
+  function cardHTML(item) {
+    const sourceLine = item.source && /^https?:\/\//.test(item.source)
+      ? `<a href="${item.source}" target="_blank" rel="noopener" class="hover:text-ink underline">Source ↗</a>${item.submitter ? ' · ' + item.submitter : ''}`
+      : (item.source || item.submitter || '');
+    return `
+      <article class="clay clay-hover p-6 transition-all duration-200 flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-[11px] tag uppercase text-pin font-semibold">${item.tag}</span>
+          <span class="text-[11px] text-fade">${item.time}</span>
+        </div>
+        <h3 class="font-serif text-lg font-medium leading-snug mb-2">${item.title}</h3>
+        <p class="text-sm text-fade leading-relaxed flex-1">${item.summary}</p>
+        <div class="mt-4 pt-3 border-t hairline text-[11px] text-fade">${sourceLine}</div>
+      </article>
+    `;
+  }
+
+  function render(localItems, assamItems) {
+    document.getElementById('local-grid').innerHTML = localItems.length
+      ? localItems.map(cardHTML).join('')
+      : `<p class="text-fade text-sm col-span-full">No local updates yet. Be the first to submit one.</p>`;
+    document.getElementById('assam-grid').innerHTML = assamItems.length
+      ? assamItems.map(cardHTML).join('')
+      : `<p class="text-fade text-sm col-span-full">No Assam updates yet.</p>`;
+  }
+
+  async function loadNews() {
+    const url = window.CONFIG && CONFIG.NEWS_SCRIPT_URL;
+    if (!url) {
+      render(fallbackLocal, fallbackAssam);
+      return;
+    }
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      if (data.error) {
+        console.error('Apps Script error:', data.error);
+        render(fallbackLocal, fallbackAssam);
+        return;
+      }
+      render(data.local || [], data.assam || []);
+    } catch (err) {
+      console.error('Failed to load news feed:', err);
+      render(fallbackLocal, fallbackAssam);
+    }
+  }
+
+  loadNews();
+
+  if (window.CONFIG && CONFIG.SUBMIT_FORM_URL) {
+    document.getElementById('submit-link').href = CONFIG.SUBMIT_FORM_URL;
+  }
+</script>
+</body>
+</html>
